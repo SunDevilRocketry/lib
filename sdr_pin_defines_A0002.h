@@ -109,6 +109,7 @@ Includes
 	#define USB_HUART                 huart6
 	#define BUZZ_TIM                  htim4
 	#define SD_HSD                    hsd1
+	#define GPS_HUART				  huart4
 
 	/* Timer channels */
 	#define BUZZ_TIM_CHANNEL         TIM_CHANNEL_3
