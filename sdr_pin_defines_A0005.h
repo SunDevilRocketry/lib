@@ -57,17 +57,17 @@ extern "C" {
 #define XBEE_DIO8_PIN       GPIO_PIN_14
 
 /* LoRa Module */
-#define LORA_MOSI_PIN	    GPIO_PIN_
-#define LORA_MISO_PIN	    GPIO_PIN_
-#define LORA_SCK_PIN	    GPIO_PIN_
-#define LORA_SS_PIN	        GPIO_PIN_
-#define LORA_RST_PIN        GPIO_PIN_
-#define LORA_IO0_PIN        GPIO_PIN_
-#define LORA_IO1_PIN        GPIO_PIN_
-#define LORA_IO2_PIN        GPIO_PIN_
-#define LORA_IO3_PIN        GPIO_PIN_
-#define LORA_IO4_PIN        GPIO_PIN_
-#define LORA_IO5_PIN        GPIO_PIN_
+#define LORA_MOSI_PIN	    GPIO_PIN_15
+#define LORA_MISO_PIN	    GPIO_PIN_14
+#define LORA_SCK_PIN	    GPIO_PIN_10
+#define LORA_SS_PIN	        GPIO_PIN_3
+#define LORA_RST_PIN        GPIO_PIN_2
+#define LORA_IO0_PIN        GPIO_PIN_6
+#define LORA_IO1_PIN        GPIO_PIN_7
+#define LORA_IO2_PIN        GPIO_PIN_4
+#define LORA_IO3_PIN        GPIO_PIN_4
+#define LORA_IO4_PIN        GPIO_PIN_5
+#define LORA_IO5_PIN        GPIO_PIN_0
 
 
 /*------------------------------------------------------------------------------
@@ -117,10 +117,12 @@ extern "C" {
 ------------------------------------------------------------------------------*/
 
 /* HAL Handles */
-extern UART_HandleTypeDef huart1; /* USB UART  */
+extern UART_HandleTypeDef huart1; /* USB UART           */
+extern UART_HandleTypeDef huart4; /* XBee wireless UART */
 
 /* Peripheral Macros */
-#define USB_HUART                huart1
+#define USB_HUART         huart1
+#define XBEE_HUART        huart4
 
 #ifdef __cplusplus
 }

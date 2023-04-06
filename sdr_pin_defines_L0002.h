@@ -67,6 +67,13 @@ extern "C" {
 	#define PRESSURE_MUXC_PIN         GPIO_PIN_11
 	#define PRESSURE_MUX_ALL_PINS     ( (uint16_t) 0x0E00 )
 
+	/* Thermcouple */
+	#define THERMO_SDA_PIN            GPIO_PIN_7
+	#define THERMO_SCL_PIN            GPIO_PIN_6
+	#define THERMO_ALERT_PIN          GPIO_PIN_13
+	#define THERMO_OC_PIN             GPIO_PIN_14
+	#define THERMO_SC_PIN             GPIO_PIN_15
+
 
 	/*-------------------------------------------------------------------------
 	 MCU Port Assignments                                                          
@@ -95,21 +102,32 @@ extern "C" {
 	/* Pressure transducers */
 	#define PRESSURE_GPIO_PORT        GPIOD
 
+	/* Thermocouple */
+	#define THERMO_I2C_GPIO_PORT      GPIOB
+	#define THERMO_ALERT_GPIO_PORT    GPIOE
+
+
 	/*--------------------------------------------------------------------------
 	 MCU Peripheral Configuration 
 	--------------------------------------------------------------------------*/
 
 	/* Peripheral handles */
-	extern SPI_HandleTypeDef  hspi2;  /* Flash SPI     */
-	extern UART_HandleTypeDef huart1; /* USB UART      */
-	extern ADC_HandleTypeDef  hadc1;  /* Pressure ADC  */
-	extern ADC_HandleTypeDef  hadc2;  /* Load Cell ADC */
+	extern ADC_HandleTypeDef          hadc1;  /* Pressure ADC       */
+	extern ADC_HandleTypeDef          hadc2;  /* Load Cell ADC      */
+	extern I2C_HandleTypeDef          hi2c1;  /* Thermocouple I2C   */
+	extern SPI_HandleTypeDef          hspi2;  /* Flash SPI          */
+	extern UART_HandleTypeDef         huart1; /* USB UART           */
+	extern UART_HandleTypeDef         huart2; /* Valve control UART */
+	extern UART_HandleTypeDef         huart4; /* Wireless UART      */
 
 	/* Peripheral Macros */
-	#define FLASH_SPI                 hspi2
-	#define USB_HUART                 huart1
 	#define PRESS_ADC                 hadc1
 	#define LOADCELL_ADC              hadc2
+	#define THERMO_I2C                hi2c1
+	#define FLASH_SPI                 hspi2
+	#define USB_HUART                 huart1
+	#define VALVE_HUART               huart2
+	#define XBEE_HUART                huart4
 
 #endif /* L0002_REV1 */
 
