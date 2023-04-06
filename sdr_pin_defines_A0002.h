@@ -137,6 +137,7 @@ extern SD_HandleTypeDef   hsd1;   /* SD Card      */
 extern SPI_HandleTypeDef  hspi2;  /* Flash SPI    */
 extern TIM_HandleTypeDef  htim4;  /* Buzzer Timer */
 extern UART_HandleTypeDef huart6; /* USB UART     */
+extern UART_HandleTypeDef huart4; /* GPS UART	  */
 
 	/* Peripheral Compatibility Macros */
 	#define BARO_I2C                  hi2c1 
