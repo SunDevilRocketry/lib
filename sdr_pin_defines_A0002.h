@@ -131,12 +131,14 @@ Includes
 --------------------------------------------------------------------------*/
 
 /* MCU Peripheral Handles */
-extern I2C_HandleTypeDef  hi2c1;  /* Baro I2C     */
-extern I2C_HandleTypeDef  hi2c2;  /* IMU I2C      */
-extern SD_HandleTypeDef   hsd1;   /* SD Card      */
-extern SPI_HandleTypeDef  hspi2;  /* Flash SPI    */
-extern TIM_HandleTypeDef  htim4;  /* Buzzer Timer */
-extern UART_HandleTypeDef huart6; /* USB UART     */
+extern I2C_HandleTypeDef  hi2c1;  /* Baro I2C     	   */
+extern I2C_HandleTypeDef  hi2c2;  /* IMU I2C      	   */
+extern SD_HandleTypeDef   hsd1;   /* SD Card      	   */
+extern SPI_HandleTypeDef  hspi2;  /* Flash SPI    	   */
+extern TIM_HandleTypeDef  htim4;  /* Buzzer Timer 	   */
+extern UART_HandleTypeDef huart6; /* USB UART     	   */
+extern TIM_HandleTypeDef  htim2;  /* Servo PWM Timer 1 */
+extern TIM_HandleTypeDef  htim3;  /* Servo PWM Timer 2 */
 
 /* Peripheral Compatibility Macros */
 #define BARO_I2C                  hi2c1 
@@ -145,6 +147,8 @@ extern UART_HandleTypeDef huart6; /* USB UART     */
 #define USB_HUART                 huart6
 #define BUZZ_TIM                  htim4
 #define SD_HSD                    hsd1
+#define TIM_SERVO1				  htim2
+#define TIM_SERVO2				  htim3
 
 /* Timer channels */
 #define BUZZ_TIM_CHANNEL         TIM_CHANNEL_3
