@@ -78,7 +78,9 @@ typedef enum _ERROR_CODE
     ERROR_PING_TIMEOUT_ERROR           , /* Ping Timeout                      */
     ERROR_RS485_UART_INIT_ERROR        , /* Error initializing RS485 UART     */
     ERROR_SOL_CMD_ERROR                , /* Error passing on solenoid command */
-    ERROR_FSM_INVALID_STATE_TRANSITION_ERROR  /* Error changing state         */
+    ERROR_FSM_INVALID_STATE_TRANSITION_ERROR,  /* Error changing state         */
+    ERROR_PWM4_ERROR,
+    ERROR_PWM123_ERROR
     } ERROR_CODE;
 
 
