@@ -53,7 +53,9 @@ extern "C" {
 #define XBEE_DIO1_PIN       GPIO_PIN_6
 #define XBEE_DIO5_PIN       GPIO_PIN_3
 #define XBEE_DIO6_PIN       GPIO_PIN_4
+#define XBEE_RTS_PIN        GPIO_PIN_4
 #define XBEE_DIO7_PIN       GPIO_PIN_1
+#define XBEE_CTS_PIN        GPIO_PIN_1
 #define XBEE_DIO8_PIN       GPIO_PIN_14
 
 /* LoRa Module */
@@ -94,8 +96,10 @@ extern "C" {
 #define XBEE_DIO0_GPIO_PORT       GPIOD
 #define XBEE_DIO1_GPIO_PORT       GPIOD
 #define XBEE_DIO5_GPIO_PORT       GPIOD
-#define XBEE_DIO6_GPIO_PORT       GPIOD
-#define XBEE_DIO7_GPIO_PORT       GPIOD
+#define XBEE_DIO6_GPIO_PORT       GPIOD    /* HW Flow Ctrl RTS */
+#define XBEE_DIO7_GPIO_PORT       GPIOD    /* HW Flow Ctrl CTS */
+#define XBEE_RTS_GPIO_PORT        GPIOD
+#define XBEE_CTS_GPIO_PORT        GPIOD
 #define XBEE_DIO8_GPIO_PORT       GPIOC
 
 /* LoRa Module */
@@ -119,10 +123,12 @@ extern "C" {
 /* HAL Handles */
 extern UART_HandleTypeDef huart1; /* USB UART           */
 extern UART_HandleTypeDef huart4; /* XBee wireless UART */
+extern UART_HandleTypeDef huart5; /* RS485 UART         */
 
 /* Peripheral Macros */
 #define USB_HUART         huart1
 #define XBEE_HUART        huart4
+#define RS485_HUART       huart5
 
 #ifdef __cplusplus
 }

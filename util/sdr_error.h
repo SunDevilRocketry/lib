@@ -75,6 +75,11 @@ typedef enum _ERROR_CODE
     ERROR_FSM_INVALID_STATE_ERROR      , /* Invalid state variable value      */
     ERROR_VC_OFFLINE_ERROR             , /* Can't connect to valve controller */
     ERROR_VC_INIT_ERROR                , /* Error initializing main valves    */
+    ERROR_PING_TIMEOUT_ERROR           , /* Ping Timeout                      */
+    ERROR_RS485_UART_INIT_ERROR        , /* Error initializing RS485 UART     */
+    ERROR_RS485_UART_ERROR             , /* Error during RS485 transmission   */
+    ERROR_SOL_CMD_ERROR                , /* Error passing on solenoid command */
+    ERROR_PT_ADC_CHANNEL_ERROR         , /* Error switching adc channel       */
     ERROR_FSM_INVALID_STATE_TRANSITION_ERROR  /* Error changing state         */
     } ERROR_CODE;
 
