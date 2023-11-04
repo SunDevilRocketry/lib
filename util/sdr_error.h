@@ -50,6 +50,7 @@ typedef enum _ERROR_CODE
     ERROR_IMU_I2C_INIT_ERROR           , /* Error initializing IMU I2C bus    */
     ERROR_BARO_I2C_INIT_ERROR          , /* Error initializing the baro I2C   */
     ERROR_FLASH_SPI_INIT_ERROR         , /* Error initializing the flash SPI  */
+    ERROR_LORA_SPI_INIT_ERROR         ,
     ERROR_USB_UART_INIT_ERROR          , /* Error initializing the USB UART   */
     ERROR_BUZZER_TIM_INIT_ERROR        , /* Error initializing the buzzer TIM */
     ERROR_I2C_HAL_MSP_ERROR            , /* Error in I2C HAL MSP              */
@@ -60,6 +61,7 @@ typedef enum _ERROR_CODE
     ERROR_USB_UART_ERROR               , /* General UART USB I/O error        */
     ERROR_XBEE_UART_CONFIG_ERROR       , /* Error initializing XBee UART      */
     ERROR_RF_UART_INIT_ERROR           , /* Error initializing wireless UART  */
+    RCCEx_PeriphCLKConfig_ERROR,
     ERROR_UNSUPPORTED_OP_ERROR         , /* Unimplimented feature error       */
     ERROR_THERMO_INIT_ERROR            , /* Error initializaing thermocouple  */
     ERROR_PT_ADC_INIT_ERROR            , /* Error initializing PT ADC         */
