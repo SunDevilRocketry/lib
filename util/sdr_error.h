@@ -51,6 +51,7 @@ typedef enum _ERROR_CODE
     ERROR_BARO_I2C_INIT_ERROR          , /* Error initializing the baro I2C   */
     ERROR_FLASH_SPI_INIT_ERROR         , /* Error initializing the flash SPI  */
     ERROR_USB_UART_INIT_ERROR          , /* Error initializing the USB UART   */
+    ERROR_GPS_UART_INIT_ERROR          , /* Error initializing the GPS UART */
     ERROR_BUZZER_TIM_INIT_ERROR        , /* Error initializing the buzzer TIM */
     ERROR_I2C_HAL_MSP_ERROR            , /* Error in I2C HAL MSP              */
     ERROR_SPI_HAL_MSP_ERROR            , /* Error in SPI HAL MSP              */
