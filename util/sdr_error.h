@@ -59,6 +59,7 @@ typedef enum _ERROR_CODE
     ERROR_RF_UNRECOGNIZED_PING         , /* RF ping byte incorrect            */
     ERROR_USB_UART_ERROR               , /* General UART USB I/O error        */
     ERROR_XBEE_UART_CONFIG_ERROR       , /* Error initializing XBee UART      */
+    ERROR_LORA_SPI_CONFIG_ERROR        , /* Error initializing Lora SPI       */
     ERROR_RF_UART_INIT_ERROR           , /* Error initializing wireless UART  */
     ERROR_UNSUPPORTED_OP_ERROR         , /* Unimplimented feature error       */
     ERROR_THERMO_INIT_ERROR            , /* Error initializaing thermocouple  */
