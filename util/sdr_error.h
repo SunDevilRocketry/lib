@@ -69,6 +69,7 @@ typedef enum _ERROR_CODE
     ERROR_IGN_CMD_ERROR                , /* Error executing ignition command  */
     ERROR_FLASH_CMD_ERROR              , /* Error executing flash command     */
     ERROR_SENSOR_CMD_ERROR             , /* Error executing sensor command    */
+    ERROR_SERVO_CMD_ERROR              ,
     ERROR_VALVE_CMD_ERROR              , /* Error executingvalve command      */
     ERROR_BARO_CAL_ERROR               , /* Error calibrating ground pressure */
     ERROR_DATA_HAZARD_ERROR            , /* Potential data corruption error   */
