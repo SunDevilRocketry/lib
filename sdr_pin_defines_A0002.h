@@ -75,6 +75,10 @@ Includes
 	#define MAG_DRDY_PIN          GPIO_PIN_2
 #endif
 
+/* LORA */
+#define LORA_NSS	GPIO_PIN_0
+#define LORA_RST 	GPIO_PIN_1
+#define LORA_DI0	GPIO_PIN_8
 
 /*-----------------------------------------------------------------------------
  MCU Port Assignments                                                          
@@ -125,6 +129,10 @@ Includes
 	#define MAG_DRDY_GPIO_PORT    GPIOB 
 #endif
 
+/* LORA */
+#define LORA_NSS_PORT	GPIOC
+#define LORA_RST_PORT 	GPIOC
+#define LORA_DI0_PORT	GPIOE
 
 /*--------------------------------------------------------------------------
  MCU Peripheral Configuration 
