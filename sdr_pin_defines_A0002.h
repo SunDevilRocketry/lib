@@ -131,10 +131,10 @@ Includes
 #endif
 
 /* Servo Enable */
-#define MOTOR1_EN				GPIOD
-#define MOTOR2_EN				GPIOC
-#define MOTOR3_EN				GPIOD
-#define MOTOR4_EN				GPIOA
+#define MOTOR1_EN_PORT				GPIOD
+#define MOTOR2_EN_PORT				GPIOC
+#define MOTOR3_EN_PORT				GPIOD
+#define MOTOR4_EN_PORT				GPIOA
 
 
 /*--------------------------------------------------------------------------
