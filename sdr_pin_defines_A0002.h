@@ -75,6 +75,11 @@ Includes
 	#define MAG_DRDY_PIN          GPIO_PIN_2
 #endif
 
+/* Servo Enable */
+#define MOTOR1_EN				GPIO_PIN_11
+#define MOTOR2_EN				GPIO_PIN_5
+#define MOTOR3_EN				GPIO_PIN_10
+#define MOTOR4_EN				GPIO_PIN_4
 
 /*-----------------------------------------------------------------------------
  MCU Port Assignments                                                          
@@ -124,6 +129,12 @@ Includes
 	#define MAG_INT_GPIO_PORT     GPIOE
 	#define MAG_DRDY_GPIO_PORT    GPIOB 
 #endif
+
+/* Servo Enable */
+#define MOTOR1_EN				GPIOD
+#define MOTOR2_EN				GPIOC
+#define MOTOR3_EN				GPIOD
+#define MOTOR4_EN				GPIOA
 
 
 /*--------------------------------------------------------------------------
