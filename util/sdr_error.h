@@ -83,7 +83,8 @@ typedef enum _ERROR_CODE
     ERROR_PT_ADC_CHANNEL_ERROR         , /* Error switching adc channel       */
     ERROR_FSM_INVALID_STATE_TRANSITION_ERROR,  /* Error changing state         */
     ERROR_PWM4_ERROR,
-    ERROR_PWM123_ERROR
+    ERROR_PWM123_ERROR,
+    ERROR_SERVO_INIT_ERROR
     } ERROR_CODE;
 
 
