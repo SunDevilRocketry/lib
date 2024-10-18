@@ -75,6 +75,11 @@ Includes
 	#define MAG_DRDY_PIN          GPIO_PIN_2
 #endif
 
+/* Servo Enable */
+#define MOTOR1_EN				GPIO_PIN_11
+#define MOTOR2_EN				GPIO_PIN_5
+#define MOTOR3_EN				GPIO_PIN_10
+#define MOTOR4_EN				GPIO_PIN_4
 
 /*-----------------------------------------------------------------------------
  MCU Port Assignments                                                          
@@ -125,28 +130,38 @@ Includes
 	#define MAG_DRDY_GPIO_PORT    GPIOB 
 #endif
 
+/* Servo Enable */
+#define MOTOR1_EN_PORT				GPIOD
+#define MOTOR2_EN_PORT				GPIOC
+#define MOTOR3_EN_PORT				GPIOD
+#define MOTOR4_EN_PORT				GPIOA
+
 
 /*--------------------------------------------------------------------------
  MCU Peripheral Configuration 
 --------------------------------------------------------------------------*/
 
 /* MCU Peripheral Handles */
-extern I2C_HandleTypeDef  hi2c1;  /* Baro I2C     */
-extern I2C_HandleTypeDef  hi2c2;  /* IMU I2C      */
-extern SD_HandleTypeDef   hsd1;   /* SD Card      */
-extern SPI_HandleTypeDef  hspi2;  /* Flash SPI    */
-extern TIM_HandleTypeDef  htim4;  /* Buzzer Timer */
-extern UART_HandleTypeDef huart6; /* USB UART     */
+extern I2C_HandleTypeDef  hi2c1;  /* Baro I2C     	   */
+extern I2C_HandleTypeDef  hi2c2;  /* IMU I2C      	   */
+extern SD_HandleTypeDef   hsd1;   /* SD Card      	   */
+extern SPI_HandleTypeDef  hspi2;  /* Flash SPI    	   */
+extern TIM_HandleTypeDef  htim4;  /* Buzzer Timer 	   */
+extern UART_HandleTypeDef huart6; /* USB UART     	   */
 extern UART_HandleTypeDef huart4; /* GPS UART	  */
+extern TIM_HandleTypeDef  htim2;  /* Servo PWM Timer 1 */
+extern TIM_HandleTypeDef  htim3;  /* Servo PWM Timer 2 */
 
-	/* Peripheral Compatibility Macros */
-	#define BARO_I2C                  hi2c1 
-	#define FLASH_SPI                 hspi2
-	#define IMU_I2C                   hi2c2
-	#define USB_HUART                 huart6
-	#define BUZZ_TIM                  htim4
-	#define SD_HSD                    hsd1
-	#define GPS_HUART				  huart4
+/* Peripheral Compatibility Macros */
+#define BARO_I2C                  hi2c1 
+#define FLASH_SPI                 hspi2
+#define IMU_I2C                   hi2c2
+#define USB_HUART                 huart6
+#define BUZZ_TIM                  htim4
+#define SD_HSD                    hsd1
+#define GPS_HUART				  huart4
+#define TIM_SERVO1				  htim2
+#define TIM_SERVO2				  htim3
 
 /* Timer channels */
 #define BUZZ_TIM_CHANNEL         TIM_CHANNEL_3
