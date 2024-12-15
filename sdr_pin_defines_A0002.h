@@ -83,7 +83,7 @@ Includes
 #define LORA_NSS_PIN			GPIO_PIN_0
 #define LORA_RST_PIN 			GPIO_PIN_1
 		
-#define LORA_DI00_PIN			GPIO_PIN_8
+#define LORA_DIO0_PIN			GPIO_PIN_8
 #define LORA_DIO4_PIN 			GPIO_PIN_9
 #define LORA_DIO1_PIN 			GPIO_PIN_10
 #define LORA_DIO3_PIN 			GPIO_PIN_11
