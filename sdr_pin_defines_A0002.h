@@ -76,9 +76,19 @@ Includes
 #endif
 
 /* LORA */
-#define LORA_NSS_PIN	GPIO_PIN_0
-#define LORA_RST_PIN 	GPIO_PIN_1
-#define LORA_DI00_PIN	GPIO_PIN_8
+#define LORA_SCK_PIN 			GPIO_PIN_2
+#define LORA_MISO_PIN 			GPIO_PIN_5
+#define LORA_MOSI_PIN 			GPIO_PIN_6
+		
+#define LORA_NSS_PIN			GPIO_PIN_0
+#define LORA_RST_PIN 			GPIO_PIN_1
+		
+#define LORA_DI00_PIN			GPIO_PIN_8
+#define LORA_DIO4_PIN 			GPIO_PIN_9
+#define LORA_DIO1_PIN 			GPIO_PIN_10
+#define LORA_DIO3_PIN 			GPIO_PIN_11
+#define LORA_DIO2_PIN 			GPIO_PIN_12
+#define LORA_DIO5_PIN 			GPIO_PIN_13
 
 /*-----------------------------------------------------------------------------
  MCU Port Assignments                                                          
@@ -130,9 +140,19 @@ Includes
 #endif
 
 /* LORA */
-#define LORA_NSS_PORT	GPIOC
-#define LORA_RST_PORT 	GPIOC
-#define LORA_DI00_PORT	GPIOE
+#define LORA_SCK_GPIO_PORT 		GPIOE
+#define LORA_MISO_GPIO_PORT 	GPIOE
+#define LORA_MOSI_GPIO_PORT 	GPIOE
+
+#define LORA_RST_GPIO_PORT 		GPIOC
+#define LORA_NSS_GPIO_PORT		GPIOC
+
+#define LORA_DI00_GIPO_PORT		GPIOE
+#define LORA_DIO4_GPIO_PORT		GPIOE
+#define LORA_DIO1_GPIO_PORT		GPIOE
+#define LORA_DIO3_GPIO_PORT		GPIOE
+#define LORA_DIO2_GPIO_PORT		GPIOE
+#define LORA_DIO5_GPIO_PORT		GPIOE
 
 /*--------------------------------------------------------------------------
  MCU Peripheral Configuration 
