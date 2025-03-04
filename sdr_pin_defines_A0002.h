@@ -148,6 +148,7 @@ extern SD_HandleTypeDef   hsd1;   /* SD Card      	   */
 extern SPI_HandleTypeDef  hspi2;  /* Flash SPI    	   */
 extern TIM_HandleTypeDef  htim4;  /* Buzzer Timer 	   */
 extern UART_HandleTypeDef huart6; /* USB UART     	   */
+extern UART_HandleTypeDef huart4; /* GPS UART	  */
 extern TIM_HandleTypeDef  htim2;  /* Servo PWM Timer 1 */
 extern TIM_HandleTypeDef  htim3;  /* Servo PWM Timer 2 */
 
@@ -158,6 +159,7 @@ extern TIM_HandleTypeDef  htim3;  /* Servo PWM Timer 2 */
 #define USB_HUART                 huart6
 #define BUZZ_TIM                  htim4
 #define SD_HSD                    hsd1
+#define GPS_HUART				  huart4
 #define TIM_SERVO1				  htim2
 #define TIM_SERVO2				  htim3
 

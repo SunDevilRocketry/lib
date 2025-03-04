@@ -82,6 +82,8 @@ typedef enum _ERROR_CODE
     ERROR_SOL_CMD_ERROR                , /* Error passing on solenoid command */
     ERROR_PT_ADC_CHANNEL_ERROR         , /* Error switching adc channel       */
     ERROR_FSM_INVALID_STATE_TRANSITION_ERROR,  /* Error changing state         */
+    ERROR_GPS_UART4_INITIALIZATION     , /* Error initializing UART for GPS */
+    ERROR_GPS_UART4_DEMSP              ,  /* Error initializing DEMSP UART for GPS */
     ERROR_PWM4_ERROR,
     ERROR_PWM123_ERROR,
     ERROR_SERVO_INIT_ERROR
