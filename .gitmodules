@@ -1,0 +1,3 @@
+[submodule "Drivers/STM32H7xx_HAL_Driver"]
+	path = Drivers/STM32H7xx_HAL_Driver
+	url = https://github.com/STMicroelectronics/stm32h7xx-hal-driver.git
