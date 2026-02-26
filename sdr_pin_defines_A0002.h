@@ -151,6 +151,7 @@ extern UART_HandleTypeDef huart6; /* USB UART     	   */
 extern UART_HandleTypeDef huart4; /* GPS UART	  */
 extern TIM_HandleTypeDef  htim2;  /* Servo PWM Timer 1 */
 extern TIM_HandleTypeDef  htim3;  /* Servo PWM Timer 2 */
+extern TIM_HandleTypeDef  htim5;  /* Microsecond Timer */
 
 /* Peripheral Compatibility Macros */
 #define BARO_I2C                  hi2c1 
@@ -162,6 +163,7 @@ extern TIM_HandleTypeDef  htim3;  /* Servo PWM Timer 2 */
 #define GPS_HUART				  huart4
 #define TIM_SERVO1				  htim2
 #define TIM_SERVO2				  htim3
+#define MICRO_TIM                 htim5
 
 /* Timer channels */
 #define BUZZ_TIM_CHANNEL         TIM_CHANNEL_3
