@@ -163,6 +163,14 @@ extern TIM_HandleTypeDef  htim3;  /* Servo PWM Timer 2 */
 #define TIM_SERVO1				  htim2
 #define TIM_SERVO2				  htim3
 
+/* Interrupt Request Numbers */
+#define BARO_I2C_EV_IRQn     I2C1_EV_IRQn   /* Event interrupt  */
+#define BARO_I2C_ER_IRQn     I2C1_ER_IRQn   /* Error interrupt  */
+#define IMU_I2C_EV_IRQn	     I2C2_EV_IRQn   /* Event interrupt  */
+#define IMU_I2C_ER_IRQn      I2C2_ER_IRQn   /* Error interrupt  */
+#define FLASH_SPI_IRQn       SPI1_IRQn	    /* Global interrupt */
+#define GPS_UART_IRQn	     UART4_IRQn     /* Global interrupt */
+
 /* Timer channels */
 #define BUZZ_TIM_CHANNEL         TIM_CHANNEL_3
 
