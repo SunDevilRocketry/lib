@@ -165,6 +165,14 @@ extern TIM_HandleTypeDef  htim5;  /* Microsecond Timer */
 #define TIM_SERVO2				  htim3
 #define MICRO_TIM                 htim5
 
+/* Interrupt Request Numbers */
+#define BARO_I2C_EV_IRQn     I2C1_EV_IRQn   /* Event interrupt  */
+#define BARO_I2C_ER_IRQn     I2C1_ER_IRQn   /* Error interrupt  */
+#define IMU_I2C_EV_IRQn	     I2C2_EV_IRQn   /* Event interrupt  */
+#define IMU_I2C_ER_IRQn      I2C2_ER_IRQn   /* Error interrupt  */
+#define FLASH_SPI_IRQn       SPI1_IRQn	    /* Global interrupt */
+#define GPS_UART_IRQn	     UART4_IRQn     /* Global interrupt */
+
 /* Timer channels */
 #define BUZZ_TIM_CHANNEL         TIM_CHANNEL_3
 
