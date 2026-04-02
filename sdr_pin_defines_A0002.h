@@ -168,6 +168,7 @@ extern UART_HandleTypeDef huart4; /* GPS UART	  */
 extern TIM_HandleTypeDef  htim2;  /* Servo PWM Timer 1 */
 extern TIM_HandleTypeDef  htim3;  /* Servo PWM Timer 2 */
 extern SPI_HandleTypeDef  hspi4;  /* LORA SPI */
+extern TIM_HandleTypeDef  htim5;  /* Microsecond Timer */
 
 /* Peripheral Compatibility Macros */
 #define BARO_I2C                  hi2c1 
@@ -180,6 +181,7 @@ extern SPI_HandleTypeDef  hspi4;  /* LORA SPI */
 #define TIM_SERVO1				  htim2
 #define TIM_SERVO2				  htim3
 #define LORA_SPI				  hspi4
+#define MICRO_TIM                 htim5
 
 /* Interrupt Request Numbers */
 #define BARO_I2C_EV_IRQn     I2C1_EV_IRQn   /* Event interrupt  */
