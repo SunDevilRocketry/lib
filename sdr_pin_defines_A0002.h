@@ -89,6 +89,9 @@ Includes
 #define MOTOR3_EN				GPIO_PIN_10
 #define MOTOR4_EN				GPIO_PIN_4
 
+/* GPS */
+#define GPS_RST_PIN             GPIO_PIN_7
+
 /*-----------------------------------------------------------------------------
  MCU Port Assignments                                                          
 ------------------------------------------------------------------------------*/
@@ -152,6 +155,8 @@ Includes
 #define MOTOR3_EN_PORT				GPIOD
 #define MOTOR4_EN_PORT				GPIOA
 
+/* GPS */
+#define GPS_RST_PORT                GPIOA
 
 /*--------------------------------------------------------------------------
  MCU Peripheral Configuration 
