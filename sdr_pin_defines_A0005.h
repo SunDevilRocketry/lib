@@ -62,7 +62,7 @@ extern "C" {
 #define LORA_MOSI_PIN	    GPIO_PIN_15
 #define LORA_MISO_PIN	    GPIO_PIN_14
 #define LORA_SCK_PIN	    GPIO_PIN_10
-#define LORA_SS_PIN	        GPIO_PIN_3
+#define LORA_NSS_PIN	        GPIO_PIN_3
 #define LORA_RST_PIN        GPIO_PIN_2
 #define LORA_IO0_PIN        GPIO_PIN_6
 #define LORA_IO1_PIN        GPIO_PIN_7
@@ -106,7 +106,7 @@ extern "C" {
 #define LORA_MOSI_GPIO_PORT	      GPIOB
 #define LORA_MISO_GPIO_PORT       GPIOB
 #define LORA_SCK_GPIO_PORT	      GPIOB
-#define LORA_SS_GPIO_PORT	      GPIOA
+#define LORA_NSS_GPIO_PORT	      GPIOA
 #define LORA_RST_GPIO_PORT        GPIOA
 #define LORA_IO0_GPIO_PORT        GPIOA
 #define LORA_IO1_GPIO_PORT        GPIOA
@@ -124,11 +124,13 @@ extern "C" {
 extern UART_HandleTypeDef huart1; /* USB UART           */
 extern UART_HandleTypeDef huart4; /* XBee wireless UART */
 extern UART_HandleTypeDef huart5; /* RS485 UART         */
+extern SPI_HandleTypeDef  hspi2;  /* LORA SPI */
 
 /* Peripheral Macros */
 #define USB_HUART         huart1
 #define XBEE_HUART        huart4
 #define RS485_HUART       huart5
+#define LORA_SPI          hspi2
 
 #ifdef __cplusplus
 }

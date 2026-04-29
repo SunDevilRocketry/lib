@@ -33,6 +33,14 @@ Includes
 #define STATUS_G_PIN              GPIO_PIN_10  
 #define STATUS_R_PIN              GPIO_PIN_11  
 
+/* LoRa */
+#define LORA_SCK_PIN 			GPIO_PIN_2
+#define LORA_MISO_PIN 			GPIO_PIN_5
+#define LORA_MOSI_PIN 			GPIO_PIN_6
+
+#define LORA_NSS_PIN			GPIO_PIN_0
+#define LORA_RST_PIN 			GPIO_PIN_1
+
 /* Ignition */
 #define SWITCH_PIN                GPIO_PIN_7
 #define MAIN_PIN                  GPIO_PIN_6
@@ -87,6 +95,14 @@ Includes
 
 /* LED */
 #define STATUS_GPIO_PORT          GPIOA
+
+/* LORA */
+#define LORA_SCK_GPIO_PORT 		GPIOE
+#define LORA_MISO_GPIO_PORT 	GPIOE
+#define LORA_MOSI_GPIO_PORT 	GPIOE
+
+#define LORA_RST_GPIO_PORT 		GPIOC
+#define LORA_NSS_GPIO_PORT		GPIOC
 
 /* Ignition */
 #define SWITCH_GPIO_PORT          GPIOD
@@ -151,6 +167,8 @@ extern UART_HandleTypeDef huart6; /* USB UART     	   */
 extern UART_HandleTypeDef huart4; /* GPS UART	  */
 extern TIM_HandleTypeDef  htim2;  /* Servo PWM Timer 1 */
 extern TIM_HandleTypeDef  htim3;  /* Servo PWM Timer 2 */
+extern SPI_HandleTypeDef  hspi4;  /* LORA SPI */
+extern TIM_HandleTypeDef  htim5;  /* Microsecond Timer */
 
 /* Peripheral Compatibility Macros */
 #define BARO_I2C                  hi2c1 
@@ -162,6 +180,16 @@ extern TIM_HandleTypeDef  htim3;  /* Servo PWM Timer 2 */
 #define GPS_HUART				  huart4
 #define TIM_SERVO1				  htim2
 #define TIM_SERVO2				  htim3
+#define LORA_SPI				  hspi4
+#define MICRO_TIM                 htim5
+
+/* Interrupt Request Numbers */
+#define BARO_I2C_EV_IRQn     I2C1_EV_IRQn   /* Event interrupt  */
+#define BARO_I2C_ER_IRQn     I2C1_ER_IRQn   /* Error interrupt  */
+#define IMU_I2C_EV_IRQn	     I2C2_EV_IRQn   /* Event interrupt  */
+#define IMU_I2C_ER_IRQn      I2C2_ER_IRQn   /* Error interrupt  */
+#define FLASH_SPI_IRQn       SPI1_IRQn	    /* Global interrupt */
+#define GPS_UART_IRQn	     UART4_IRQn     /* Global interrupt */
 
 /* Timer channels */
 #define BUZZ_TIM_CHANNEL         TIM_CHANNEL_3
