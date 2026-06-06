@@ -56,9 +56,6 @@ Includes
 #define FLASH_WP_PIN              GPIO_PIN_12
 #define FLASH_HOLD_PIN            GPIO_PIN_13
 
-/* SD Card */
-#define SDR_SD_DETECT_PIN         GPIO_PIN_15
-
 /* Baro Pressure Sensor */
 #define BP_INT_PIN                GPIO_PIN_3
 
@@ -119,9 +116,6 @@ Includes
 #define FLASH_WP_GPIO_PORT        GPIOD
 #define FLASH_HOLD_GPIO_PORT      GPIOD
 
-/* SD Card */
-#define SDR_SD_DETECT_GPIO_PORT   GPIOD
-
 /* Baro Pressure Sensor */
 #define BP_INT_GPIO_PORT          GPIOE
 
@@ -160,7 +154,6 @@ Includes
 /* MCU Peripheral Handles */
 extern I2C_HandleTypeDef  hi2c1;  /* Baro I2C     	   */
 extern I2C_HandleTypeDef  hi2c2;  /* IMU I2C      	   */
-extern SD_HandleTypeDef   hsd1;   /* SD Card      	   */
 extern SPI_HandleTypeDef  hspi2;  /* Flash SPI    	   */
 extern TIM_HandleTypeDef  htim4;  /* Buzzer Timer 	   */
 extern UART_HandleTypeDef huart6; /* USB UART     	   */
@@ -176,7 +169,6 @@ extern TIM_HandleTypeDef  htim5;  /* Microsecond Timer */
 #define IMU_I2C                   hi2c2
 #define USB_HUART                 huart6
 #define BUZZ_TIM                  htim4
-#define SD_HSD                    hsd1
 #define GPS_HUART				  huart4
 #define TIM_SERVO1				  htim2
 #define TIM_SERVO2				  htim3
