@@ -37,7 +37,7 @@ Includes
 #define BUZZER_PIN              GPIO_PIN_11
 
 /* Ignition */
-#define SWITCH_PIN              // EMPTY -- DAVID PLS FIX
+#define SWITCH_PIN              GPIO_PIN_6
 #define MAIN_PIN                GPIO_PIN_5
 #define MAIN_CONT_PIN           GPIO_PIN_4
 #define DROGUE_PIN              GPIO_PIN_3
@@ -65,7 +65,7 @@ Includes
 #define IMU_INT2_PIN            GPIO_PIN_5
 
 /* USB */
-#define USB_DETECT_PIN          GPIO_PIN_6
+#define USB_DETECT_PIN          GPIO_PIN_13
 #define USB_OTG_DP_PIN          GPIO_PIN_12
 #define USB_OTG_DM_PIN          GPIO_PIN_11
 
@@ -93,7 +93,7 @@ Includes
 #define BUZZER_GPIO_PORT        GPIOB
 
 /* Ignition */
-#define SWITCH_GPIO_PORT        // DAVID -- pending
+#define SWITCH_GPIO_PORT        GPIOE
 #define MAIN_GPIO_PORT          GPIOE
 #define MAIN_CONT_GPIO_PORT     GPIOE
 #define DROGUE_GPIO_PORT        GPIOE
@@ -121,7 +121,7 @@ Includes
 #define IMU_INT2_GPIO_PORT      GPIOC
 
 /* USB */
-#define USB_DETECT_GPIO_PORT    GPIOE
+#define USB_DETECT_GPIO_PORT    GPIOC
 #define USB_OTG_DP_GPIO_PORT    GPIOA
 #define USB_OTG_DM_GPIO_PORT    GPIOA
 
@@ -147,10 +147,16 @@ extern FDCAN_HandleTypeDef hfdcan3; /* CANFD			*/
 extern I2C_HandleTypeDef hi2c5;		/* Magnetometer		*/
 extern OSPI_HandleTypeDef hospi1;   /* Flash QSPI		*/
 extern SPI_HandleTypeDef hspi1;		/* IMU				*/
-extern SPI_HandleTypeDef hspi2;		/* LoRa				*/
-extern SPI_HandleTypeDef hspi4;		/* Barometer		*/
-extern UART_HandleTypeDef huart4;	/* GPS				*/
-extern UART_HandleTypeDef huart3;	/* Debugger Serial	*/
+extern SPI_HandleTypeDef hspi2;		/* Barometer		*/
+extern SPI_HandleTypeDef hspi3;		/* LoRa				*/
+extern UART_HandleTypeDef huart8;	/* GPS				*/
+extern UART_HandleTypeDef hlpuart1;	/* Debugger Serial	*/
+
+/* MCU Hardware Accelerator Handles */
+extern HASH_HandleTypeDef hhash;
+extern RNG_HandleTypeDef  hrng;
+extern CRC_HandleTypeDef hcrc;
+extern CRYP_HandleTypeDef hcryp;
 
 /* Peripheral Compatibility Macros */
 #define GPS_HUART				  huart8
@@ -159,7 +165,6 @@ extern UART_HandleTypeDef huart3;	/* Debugger Serial	*/
 #define LORA_SPI                  hspi3
 #define FLASH_OSPI                hospi1
 #define MAG_I2C                   hi2c3
-
 #define CAN_HANDLE                hfdcan3
 
 
