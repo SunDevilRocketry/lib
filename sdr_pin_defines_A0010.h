@@ -58,6 +58,7 @@ Includes
 #define BARO_MOSI_PIN           GPIO_PIN_15
 
 /* IMU */
+#define IMU_NSS_PIN             GPIO_PIN_4
 #define IMU_SCK_PIN             GPIO_PIN_5
 #define IMU_MISO_PIN            GPIO_PIN_6
 #define IMU_MOSI_PIN            GPIO_PIN_7
@@ -127,6 +128,7 @@ Includes
 #define BARO_MOSI_GPIO_PORT     GPIOB
 
 /* IMU */
+#define IMU_NSS_GPIO_PORT       GPIOA
 #define IMU_SCK_GPIO_PORT       GPIOA
 #define IMU_MISO_GPIO_PORT      GPIOA
 #define IMU_MOSI_GPIO_PORT      GPIOA
