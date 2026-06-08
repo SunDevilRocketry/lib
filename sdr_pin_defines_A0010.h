@@ -82,6 +82,19 @@ Includes
 #define GPS_EXTINT_PIN          GPIO_PIN_6
 #define GPS_TIMEPULSE_PIN       GPIO_PIN_9
 
+/* LoRa */
+#define LORA_NSS_PIN            GPIO_PIN_15
+#define LORA_SCK_PIN            GPIO_PIN_10
+#define LORA_MISO_PIN           GPIO_PIN_11
+#define LORA_MOSI_PIN           GPIO_PIN_12
+#define LORA_IO0_PIN            GPIO_PIN_0
+#define LORA_IO1_PIN            GPIO_PIN_1
+#define LORA_IO2_PIN            GPIO_PIN_2
+#define LORA_IO3_PIN            GPIO_PIN_3
+#define LORA_IO4_PIN            GPIO_PIN_4
+#define LORA_IO5_PIN            GPIO_PIN_5
+#define LORA_RST_PIN            GPIO_PIN_6
+
 /*-----------------------------------------------------------------------------
  MCU Port Assignments                                                          
 ------------------------------------------------------------------------------*/
@@ -137,6 +150,19 @@ Includes
 #define GPS_RESET_GPIO_PORT     GPIOB
 #define GPS_EXTINT_GPIO_PORT    GPIOB
 #define GPS_TIMEPULSE_GPIO_PORT GPIOB
+
+/* LoRa */
+#define LORA_NSS_GPIO_PORT      GPIOA
+#define LORA_SCK_GPIO_PORT      GPIOC
+#define LORA_MISO_GPIO_PORT     GPIOC
+#define LORA_MOSI_GPIO_PORT     GPIOC
+#define LORA_IO0_GPIO_PORT      GPIOD
+#define LORA_IO1_GPIO_PORT      GPIOD
+#define LORA_IO2_GPIO_PORT      GPIOD
+#define LORA_IO3_GPIO_PORT      GPIOD
+#define LORA_IO4_GPIO_PORT      GPIOD
+#define LORA_IO5_GPIO_PORT      GPIOD
+#define LORA_RST_GPIO_PORT      GPIOD
 
 /*--------------------------------------------------------------------------
  MCU Peripheral Configuration 
