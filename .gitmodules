@@ -1,3 +1,6 @@
 [submodule "Drivers/STM32H7xx_HAL_Driver"]
 	path = Drivers/STM32H7xx_HAL_Driver
 	url = https://github.com/STMicroelectronics/stm32h7xx-hal-driver.git
+[submodule "lsm6dsv320x-pid"]
+	path = lsm6dsv320x-pid
+	url = https://github.com/STMicroelectronics/lsm6dsv320x-pid.git
