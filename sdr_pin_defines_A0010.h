@@ -33,9 +33,6 @@ Includes
 #define STATUS_G_PIN            GPIO_PIN_2
 #define STATUS_R_PIN            GPIO_PIN_3
 
-/* Buzzer */
-#define BUZZER_PIN              GPIO_PIN_0
-
 /* Ignition */
 #define SWITCH_PIN              GPIO_PIN_1
 #define MAIN_PIN                GPIO_PIN_8
@@ -90,9 +87,6 @@ Includes
 
 /* LED */
 #define STATUS_GPIO_PORT        GPIOA
-
-/* Buzzer */
-#define BUZZER_GPIO_PORT        GPIOC
 
 /* Ignition */
 #define SWITCH_GPIO_PORT        GPIOC
@@ -155,6 +149,7 @@ extern SPI_HandleTypeDef hspi2;		/* LoRa				*/
 extern SPI_HandleTypeDef hspi4;		/* Barometer		*/
 extern UART_HandleTypeDef huart4;	/* GPS				*/
 extern UART_HandleTypeDef huart3;	/* Debugger Serial	*/
+extern TIM_HandleTypeDef htim2;     /* Buzzer timer     */
 
 /* Peripheral Compatibility Macros */
 #define GPS_HUART				  huart4
@@ -163,9 +158,11 @@ extern UART_HandleTypeDef huart3;	/* Debugger Serial	*/
 #define LORA_SPI                  hspi2
 #define FLASH_OSPI                hospi2
 #define MAG_I2C                   hi2c5
-
+#define BUZZ_TIM                  htim2
 #define CAN_HANDLE                hfdcan3
 
+/* Timer channels */
+#define BUZZ_TIM_CHANNEL        TIM_CHANNEL_4
 
 #ifdef __cplusplus
 }
