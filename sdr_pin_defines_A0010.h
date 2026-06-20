@@ -179,6 +179,7 @@ extern SPI_HandleTypeDef hspi2;		/* Barometer		*/
 extern SPI_HandleTypeDef hspi3;		/* LoRa				*/
 extern UART_HandleTypeDef huart8;	/* GPS				*/
 extern UART_HandleTypeDef hlpuart1;	/* Debugger Serial	*/
+extern TIM_HandleTypeDef htim2;     /* Buzzer timer     */
 
 /* MCU Hardware Accelerator Handles */
 extern HASH_HandleTypeDef hhash;
@@ -194,6 +195,10 @@ extern CRYP_HandleTypeDef hcryp;
 #define FLASH_OSPI                hospi1
 #define MAG_I2C                   hi2c3
 #define CAN_HANDLE                hfdcan3
+#define BUZZ_TIM                  htim2
+
+/* Timer channels */
+#define BUZZ_TIM_CHANNEL        TIM_CHANNEL_4
 
 
 #ifdef __cplusplus
