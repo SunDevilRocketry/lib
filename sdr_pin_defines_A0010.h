@@ -65,6 +65,8 @@ Includes
 #define IMU_INT1_PIN            GPIO_PIN_4
 #define IMU_INT2_PIN            GPIO_PIN_5
 
+#define IMU_INT1_EXTI_IRQn      EXTI4_IRQn
+
 /* USB */
 #define USB_DETECT_PIN          GPIO_PIN_13
 #define USB_OTG_DP_PIN          GPIO_PIN_12
