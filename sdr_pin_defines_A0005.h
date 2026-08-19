@@ -70,6 +70,7 @@ extern "C" {
 #define LORA_IO3_PIN        GPIO_PIN_4
 #define LORA_IO4_PIN        GPIO_PIN_5
 #define LORA_IO5_PIN        GPIO_PIN_0
+#define LORA_IO0_EXTI_IRQn  EXTI9_5_IRQn
 
 
 /*------------------------------------------------------------------------------
