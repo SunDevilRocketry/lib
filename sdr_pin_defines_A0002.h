@@ -34,12 +34,13 @@ Includes
 #define STATUS_R_PIN              GPIO_PIN_11  
 
 /* LoRa */
-#define LORA_SCK_PIN 			GPIO_PIN_2
-#define LORA_MISO_PIN 			GPIO_PIN_5
-#define LORA_MOSI_PIN 			GPIO_PIN_6
-
-#define LORA_NSS_PIN			GPIO_PIN_0
-#define LORA_RST_PIN 			GPIO_PIN_1
+#define LORA_SCK_PIN            GPIO_PIN_2
+#define LORA_MISO_PIN           GPIO_PIN_5
+#define LORA_MOSI_PIN           GPIO_PIN_6
+#define LORA_NSS_PIN            GPIO_PIN_0
+#define LORA_RST_PIN            GPIO_PIN_1
+#define LORA_IO0_PIN            GPIO_PIN_8
+#define LORA_IO0_EXTI_IRQn      EXTI9_5_IRQn
 
 /* Ignition */
 #define SWITCH_PIN                GPIO_PIN_7
@@ -97,9 +98,9 @@ Includes
 #define LORA_SCK_GPIO_PORT 		GPIOE
 #define LORA_MISO_GPIO_PORT 	GPIOE
 #define LORA_MOSI_GPIO_PORT 	GPIOE
-
 #define LORA_RST_GPIO_PORT 		GPIOC
 #define LORA_NSS_GPIO_PORT		GPIOC
+#define LORA_IO0_GPIO_PORT      GPIOE
 
 /* Ignition */
 #define SWITCH_GPIO_PORT          GPIOD
