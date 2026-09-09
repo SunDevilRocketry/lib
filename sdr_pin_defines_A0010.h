@@ -97,6 +97,7 @@ Includes
 #define LORA_IO4_PIN            GPIO_PIN_4
 #define LORA_IO5_PIN            GPIO_PIN_5
 #define LORA_RST_PIN            GPIO_PIN_6
+#define LORA_IO0_EXTI_IRQn      EXTI0_IRQn
 
 /*-----------------------------------------------------------------------------
  MCU Port Assignments                                                          
