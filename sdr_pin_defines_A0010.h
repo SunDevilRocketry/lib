@@ -180,6 +180,8 @@ extern SPI_HandleTypeDef hspi3;		/* LoRa				*/
 extern UART_HandleTypeDef huart8;	/* GPS				*/
 extern UART_HandleTypeDef hlpuart1;	/* Debugger Serial	*/
 extern TIM_HandleTypeDef htim2;     /* Buzzer timer     */
+// TODO set this to right one for real code
+extern TIM_HandleTypeDef htim5;     /* Microsecends timer */
 
 /* MCU Hardware Accelerator Handles */
 extern HASH_HandleTypeDef hhash;
@@ -196,9 +198,13 @@ extern CRYP_HandleTypeDef hcryp;
 #define MAG_I2C                   hi2c3
 #define CAN_HANDLE                hfdcan3
 #define BUZZ_TIM                  htim2
+// TODO we need to actually set up microsecond timer
+#define MICRO_TIM                 htim5
 
 /* Timer channels */
 #define BUZZ_TIM_CHANNEL        TIM_CHANNEL_4
+// TODO again, made up for baro. Set to real in final
+#define BARO_TIM_CHANNEL        TIM_CHANNEL_1
 
 
 #ifdef __cplusplus
