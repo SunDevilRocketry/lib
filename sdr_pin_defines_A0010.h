@@ -175,7 +175,7 @@ Includes
 
 /* MCU Peripheral Handles */
 extern FDCAN_HandleTypeDef hfdcan3; /* CANFD			*/
-extern I2C_HandleTypeDef hi2c5;		/* Magnetometer		*/
+extern I2C_HandleTypeDef hi2c3;		/* Magnetometer		*/
 extern OSPI_HandleTypeDef hospi1;   /* Flash QSPI		*/
 extern SPI_HandleTypeDef hspi1;		/* IMU				*/
 extern SPI_HandleTypeDef hspi2;		/* Barometer		*/
